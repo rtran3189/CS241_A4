@@ -1,0 +1,17 @@
+Help
+Author
+IsEmpty
+Add one two three four five
+GetIndex five
+Print two four five
+IPrint 1 3 4
+Size
+Delete two three four
+Add twelve thirteen fourteen fifteen
+IDelete 2 3 5
+GetIndex fourteen
+Size
+Print one thirteen fourteen
+IsEmpty
+Clear
+Exit

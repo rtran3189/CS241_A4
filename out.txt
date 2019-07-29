@@ -1,0 +1,140 @@
+Command: Echoing line: Help
+
+-----------------HELP-----------------
+The program will take a command from its interface input as the program is running.
+The program will print: 
+	 Command: 
+when it is ready for the next command. To enter the command just
+type one of the following commands: 
+
+	 Add <followed by list of words to add> 
+		 Adds all items into the linked list.
+		 Example: Add one two three
+
+	 Author 
+		 Prints author information.
+
+	 Clear 
+		 Removes all elements of the linked list
+
+	 Delete <followed by list of words to delete> 
+		 Deletes the specified items from the linked list.
+		 Example: Delete one two three
+
+	 IDelete <followed by list of indexes to delete> 
+		 Deletes the specified indexes from the linked list.
+		 Example: IDelete 0 4 2
+
+	 Exit 
+		 Exits the program.
+
+	 GetIndex <followed by a word> 
+		 Gets the index of the word. Returns "Index not Found" if index not found.
+		 Example: GetIndex TestOne
+
+	 Help 
+		 Prints this help information.
+
+	 IsEmpty 
+		 Returns TRUE if there is no value in the linked list. Otherwise FALSE is returned.
+
+	 Print <followed by word or list of words to print> 
+		 Prints words in order listed from input in the following format: 
+		 <index>:<word>
+
+	 PrintAll
+		 Prints all words in the linked list in the following format: 
+		 <index>:<word>
+
+	 IPrint <followed by index or list of indexes to print> 
+		 Prints the words of the items associated with the specified indexes.
+		 Example: IPrint 4 2 9
+
+	 Size 
+		 Returns the size of the linked list. Returns 0 if empty.
+
+	 Sort 
+		 Performs a merge sort on the linked list sorted by aplhabetic word order.
+--------------------------------------
+
+List is currently empty. 
+
+Command: Echoing line: Author
+
+
+/**********************************************/
+/*Name: Richard Tran                          */
+/*Course: CS241L Summer 2019                  */
+/*Date: July 11, 2019                         */
+/*Assignment: 4                               */
+/**********************************************/
+List is currently empty. 
+
+Command: Echoing line: IsEmpty
+TRUE
+List is currently empty. 
+
+Command: Echoing line: Add one two three four five
+
+Current list: 0:five  1:four  2:three  3:two  4:one  
+
+Command: Echoing line: GetIndex five
+Index of five is: 0
+
+Current list: 0:five  1:four  2:three  3:two  4:one  
+
+Command: Echoing line: Print two four five
+3:two 1:four 0:five 
+
+Current list: 0:five  1:four  2:three  3:two  4:one  
+
+Command: Echoing line: IPrint 1 3 4
+1:four 3:two 4:one 
+
+Current list: 0:five  1:four  2:three  3:two  4:one  
+
+Command: Echoing line: Size
+List length: 5
+
+Current list: 0:five  1:four  2:three  3:two  4:one  
+
+Command: Echoing line: Delete two three four
+Delete Executed Successfully.
+
+Current list: 0:five  1:one  
+
+Command: Echoing line: Add twelve thirteen fourteen fifteen
+
+Current list: 0:fifteen  1:fourteen  2:thirteen  3:twelve  4:five  5:one  
+
+Command: Echoing line: IDelete 2 3 5
+IDelete Executed Successfully.
+
+Current list: 0:fifteen  1:fourteen  2:five  
+
+Command: Echoing line: GetIndex fourteen
+Index of fourteen is: 1
+
+Current list: 0:fifteen  1:fourteen  2:five  
+
+Command: Echoing line: Size
+List length: 3
+
+Current list: 0:fifteen  1:fourteen  2:five  
+
+Command: Echoing line: Print one thirteen fourteen
+1:fourteen 
+
+Current list: 0:fifteen  1:fourteen  2:five  
+
+Command: Echoing line: IsEmpty
+FALSE
+
+Current list: 0:fifteen  1:fourteen  2:five  
+
+Command: Echoing line: Clear
+Clear Executed Successfully.
+List is currently empty. 
+
+Command: Echoing line: Exit
+Exiting program...
